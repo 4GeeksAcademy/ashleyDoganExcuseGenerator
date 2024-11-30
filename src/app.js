@@ -16,14 +16,14 @@ window.onload = function() {
     "when I was on vacation"
   ];
 
-  let rdm1 = Math.floor(Math.random() * who.length);
-  let rdm2 = Math.floor(Math.random() * action.length);
-  let rdm3 = Math.floor(Math.random() * what.length);
-  let rdm4 = Math.floor(Math.random() * when.length);
+  let rdmWho = Math.floor(Math.random() * who.length);
+  let rdmAction = Math.floor(Math.random() * action.length);
+  let rdmWhat = Math.floor(Math.random() * what.length);
+  let rdmWhen = Math.floor(Math.random() * when.length);
 
   // creating a sentence (the excuse)
   document.querySelector("#excuse").innerHTML =
-    who[rdm1] + action[rdm2] + what[rdm3] + when[rdm4];
+    who[rdmWho] + action[rdmAction] + what[rdmWhat] + when[rdmWhen];
 
   console.log("Hello Rigo from the console!");
 };
